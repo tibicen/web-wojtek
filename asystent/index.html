@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : index / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+    <title>Asystent – Wojciech Huczyński</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="To bardzo wszechstronny, uczący się program do wszelkich zautomatyzowanych zastosowań gdzie zapomniano o API.">
+    <meta name="keywords" content="urzędy, urząd, bazy danych, obsługa, instytucje publiczne, huczyński">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <!-- Feather icons -->
+    <link rel="stylesheet" type="text/css" href="../css/feather.css">
+    <!-- Main css -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- icons -->
+    <link rel="icon" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-32x32.png"
+        sizes="32x32">
+    <link rel="icon" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-192x192.png"
+        sizes="192x192">
+    <meta name="msapplication-TileImage"
+        content="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-270x270.png">
+    <link rel="apple-touch-icon-precomposed"
+        href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-180x180.png">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="../"><img src="../images/whu-logo-w.png"
+                                class="img-fluid" alt="logo">Huczyński</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+                                class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link" href="../#cv">CV</a> </li>
+                                <li class="nav-item"> <a class="nav-link active" href="#">Asystent</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="http://rodo.huczynski.pl/">RODO</a>
+                                </li>
+                                <li class="nav-item"><a href="index.html#contact"
+                                        class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home" style="min-height: auto !important;">
+        <div class="container mt-5">
+            <h1>Asystent</h1>
+            <p class="tagline">
+                To bardzo wszechstronny, uczący się program do wszelkich zautomatyzowanych zastosowań gdzie zapomniano o
+                API.
+            </p>
+        </div>
+        <div class="img-holder mt-3">
+            <img src="../images/luggage.svg" alt="client" class="main-img" style="height: 200px;">
+        </div>
+    </header>
+
+    <!-- Karty -->
+    <div class="section light-bg " id="karty">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-clock"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Oszczędza czas</h4>
+                                    <p class="card-text">Wirtualny Asystent wykona za Ciebie czynności kilkadziesiąt
+                                        razy szybciej.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-check"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Nie popełnia błędów</h4>
+                                    <p class="card-text">Przy wprowadzaniu danych każdy popełnia jakieś błędny, a
+                                        Wirtualny Asystent NIE!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-user-plus"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Łatwo się uczy</h4>
+                                    <p class="card-text">Pierwsza nauka Wirtualnego Asystenta nowego wzorca postępowania
+                                        trwa około 1 godziny, a zmiany jego zachowań to około 1-2 minuty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- Asystent -->
+    <div class="section light-bg " id="asystent">
+        <div class="container">
+            <div class="section-title">
+                <small>Skrót</small>
+                <h3>Asystent</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 text-justify">
+                    <p class="light-font mb-5">
+                        Wirtualny Asystent jest programem służącym do wprowadzania danych do dowolnych pól na ekranie
+                        komputera w aplikacji użytkownika. Może również samodzielnie uaktywniać wszystkie dostępne dla
+                        użytkownika funkcje w danej aplikacji. Dane mogą być czytane z plików tekstowych, z ekranu
+                        komputera, ale mogą być również zapisywane do plików tekstowych. <br>
+                        Wirtualny Asystent może być szczególnie pomocny, gdy wprowadzamy do bazy danych duże ilości
+                        danych posiadanych w formie elektronicznej, czyli przy instalowaniu nowych systemów
+                        wspomagających zarządzanie.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 text-justify">
+                    <p class="light-font mb-5">
+                        Może pomóc również przy konieczności dokonania wielu poprawek w bazach danych wg ustalonego
+                        algorytmu. Wirtualny Asystent działa według wzorca postępowania (którego się go nauczy) i może
+                        całkowicie zastąpić właściwego użytkownika lub też wykonywać za niego najbardziej czasochłonne
+                        czynności pozostawiając użytkownikowi jedynie najważniejsze decyzje. <br><br>
+                        Wirtualny Asystent działa w środowisku Windows
+                    </p>
+                </div>
+                <div class="col-12 col-lg-12 text-justify video">
+                    <iframe src="https://www.youtube.com/embed/EeeIyPEZn2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- // end .section -->
+
+    <!-- Funkcje -->
+    <div class="section light-bg " id="funkcje">
+        <div class="container">
+            <div class="section-title">
+                <small>Skrót</small>
+                <h3>Funkcje</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 text-justify">
+                    <ul class="layout-column-2 light-font">
+                        <li>Łatwość nauki zachowań Wirtualnego Asystenta, czyli definiowania wzorców jego zachowań;</li>
+                        <li>określanie programów, przy których Wirtualny Asystent wykazuje aktywność;</li>
+                        <li>definiowanie przez użytkownika klawiszy funkcyjnych jako „hot key” dla Wirtualnego
+                            Asystenta;</li>
+                        <li>odczytywanie danych z kilku plików jednocześnie (traktowanych jako bazy danych);</li>
+                        <li>indywidualne określanie ograniczników końca pola i końca rekordu w plikach;możliwość
+                            wykonywania „pętli” w czynnościach wykonywanych przez Wirtualnego Asystenta – pętle mogą być
+                            zagnieżdżone i równoległe;</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6 text-justify">
+                    <ul class="layout-column-2 light-font">
+                        <li>definiowanie warunków określających sekwencje wykonywanych czynności przez Wirtualnego
+                            Asystenta w zależności od spełnienia warunku -„if-then-else” – możliwość zagnieżdżania
+                            warunków;</li>
+                        <li>definiowanie miejsc, w których wstrzymuje się aktywność Wirtualnego Asystenta przekazując ją
+                            użytkownikowi;</li>
+                        <li>odczytywanie zawartości pól edycyjnych na ekranie programu użytkowego i zapisu ich
+                            zawartości w innym miejscu ekranu i w pliku tekstowym (bazie danych);</li>
+                        <li>konwersja zawartości pola według określonego algorytmu;</li>
+                        <li>definiowanie„szybkości” działania Wirtualnego Asystenta.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- // end .section -->
+
+    <!-- Czym Jest Asystent -->
+    <div class="section light-bg " id="about">
+        <div class="container">
+            <div class="section-title">
+                <small>Skrót</small>
+                <h3> Co nam daje wykorzystanie Wirtualnego Asystenta? </h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 text-justify">
+                    <p class="light-font mb-5">
+                        Wirtualny Asystent jest wielokroć szybszy niż użytkownik wprowadzając dane poprzez wpisywanie
+                        ich przez klawiaturę (kilkadziesiąt razy szybciej). Jeżeli jeszcze wprowadzanie tekstu jest
+                        łatwiejsze, to wprowadzanie ciągów cyfr zmusza użytkownika do jego przeczytania i zapamiętania,
+                        a co za tym idzie do wolniejszego wprowadzania.<br>
+                        Wirtualny Asystent może jedynie powielić istniejące błędy, a nie wprowadza nowych, co zdarza się
+                        użytkownikom. Dlatego Wirtualny Asystent umożliwia poprawianie istniejących wcześniej błędów, a
+                        nie doprowadza do powstawania nowych.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 text-justify">
+                    <p class="light-font mb-5">
+                        Wirtualny Asystent nie męczy się, co przy wprowadzaniu danych „zdarza się” użytkownikowi. <br>
+                        Wykorzystanie Wirtualnego Asystenta pomaga zaoszczędzić czas, a co zatem idzie pieniądze, gdyż
+                        czynności wykonywane przez użytkowników miesiącami skracają się do dni!!! <br>
+                        Wirtualny Asystent uczy się razem z Tobą i dlatego korzystaj z jego usług.Ty również możesz mieć
+                        udział w jego rozwoju, a w przyszłości…. Kto wie, może Wirtualny Asystent już w niedalekiej
+                        przyszłości będzie prał, prasował, sprzątał i gotował 🙂 .
+                    </p>
+                </div>
+                <div class="col-12 col-lg-12 text-justify video">
+                        <iframe src="https://www.youtube.com/embed/uNttQ07Da-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- // end .section -->
+
+
+
+
+    <!-- CONTACT -->
+    <div class="section pt-4 bg-gradient" id="contact">
+        <div class="container">
+            <div class="kontakt">
+                <div class="text-center">
+                    <i class="feather icon-smartphone"></i><br>
+                    <h2>Współpraca</h2>
+                    <p class="mb-2 white light-font">Jeżeli widzisz zastosowanie dla Asystenta w swojej firmie, bądź
+                        zajmujesz się tworzeniem oprogramowania, które potrzebuje transferu danych, skontaktuj się z
+                        nami:</p>
+                </div>
+                <div class="text-center">
+                    <a href="../#contact" class="btn btn-outline-light">Kontakt</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="my-5 text-center light-bg">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>
+                COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a
+                    href="https://colorlib.com">COLORLIB</a><br>
+                Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> and <a
+                    href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                    target="_blank">CC 3.0 BY</a>
+            </small></p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
