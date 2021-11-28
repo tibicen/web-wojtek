@@ -116,19 +116,10 @@ time, .description {
     color: var(--text-darker);
 }
 
-#arrow {
-    stroke: var(--text);
-}
 
-#cv div {
-    border-left: var(--border);
-    padding-bottom: 1em;
-}
 
-#arrow:hover {
-    stroke: var(--color);
-    transition: all .5s ease;
-}
+
+
 
 .background {
     color: white;
