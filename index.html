@@ -1,357 +1,192 @@
-<!doctype html>
-<html lang="en">
-<!--
-
-Page    : index / MobApp
-Version : 1.0
-Author  : Colorlib
-URI     : https://colorlib.com
-
- -->
-
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-    <title>Wojciech Huczyński – Architekt oprogramowania, doświadczony manager, przedsiębiorca.</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-        content="Strona ma na celu przybliżenie dorobku
-        oraz prezentację aktualnych projektów.">
-    <meta name="keywords"
-        content="rodo, wdrażanie, RODO, obsługa, ochrona danych osobowych, dane osobowe, instytucje publiczne, huczyński">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<title>Wojciech Huczyński</title>
+	<link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/logo-wh.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <link rel="manifest" href="./images/manifest.webmanifest">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <meta name="theme-color" content="#3177c4" />
+	<link rel="stylesheet" type="text/css" href="global.css" media="screen">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" data-svelte="svelte-19nlj96"><script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" data-svelte="svelte-19nlj96"></script>
 
-    <!-- Font -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+		
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-        crossorigin=""></script>
-    <!-- Feather icons -->
-    <link rel="stylesheet" type="text/css" href="css/feather.css">
-    <!-- Main css -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- icons -->
-    <link rel="icon" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-32x32.png"
-        sizes="32x32">
-    <link rel="icon" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-192x192.png"
-        sizes="192x192">
-    <meta name="msapplication-TileImage"
-        content="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-270x270.png">
-    <link rel="apple-touch-icon-precomposed"
-        href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-180x180.png">
+		<link rel="modulepreload" href="/app_/start-3588eb69.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-e3b82690.js">
+		<link rel="modulepreload" href="/app_/layout.svelte-a7a3cc00.js">
+		<link rel="modulepreload" href="/app_/pages/index.svelte-065d88d5.js">
+		<link rel="modulepreload" href="/app_/chunks/Section-cc3e4f78.js">
+		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/app_/assets/pages/index.svelte-a576ce78.css">
+		<link rel="stylesheet" href="/app_/assets/Section-9efcb7e7.css">
+
+		<script type="module">
+			import { start } from "/app_/start-3588eb69.js";
+			start({
+				target: document.querySelector("body"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/layout.svelte-a7a3cc00.js"),
+						import("/app_/pages/index.svelte-065d88d5.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
-
-    <!-- Nav Menu -->
-    <div class="nav-menu fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="navbar-brand" href="#home"><img src="images/whu-logo-w.png" class="img-fluid"
-                                alt="logo">Huczyński</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-                            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
-                                class="navbar-toggler-icon"></span> </button>
-                        <div class="collapse navbar-collapse" id="navbar">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link" href="#cv">CV</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="/asystent/">Asystent</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="http://rodo.huczynski.pl/">RODO</a>
-                                </li>
-                                <li class="nav-item"><a href="#contact"
-                                        class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Kontakt</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+<body>
 
 
-    <header class="bg-gradient" id="home">
-        <div class="container mt-5">
-            <h1>Wojciech Huczyński</h1>
-            <p class="tagline">Strona ma na celu przybliżenie dorobku<br>oraz prezentację aktualnych projektów
-            </p>
-        </div>
-        <div class="img-holder mt-3">
-            <img src="images/wh.jpg" alt="client" class="main-img round"> <br>
-            <a href="#about"><i class="feather icon-chevron-down" style="font-size: 3em;"></i></a>
-
-        </div>
-    </header>
-
-    <!-- OFERTA -->
-    <div class="section light-bg " id="about">
-        <div class="container">
-            <div class="section-title">
-                <small>Skrót</small>
-                <h3>O mnie</h3>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 text-justify">
-                    <p class="light-font mb-5">Zdany egzamin państwowy na członków Rad Nadzorczych Jednoosobowych Spółek
-                        Skarbu Państwa. (1998 r.)<br>
-                        Dyplom Central Connecticut State University New Britain, i Politechniki Wrocławskiej z
-                        ukończenia podyplomowego Polsko-Amerykańskiego Studium Komunikacji Społecznej w Organizacji i
-                        Zarządzaniu.<br><br>
-                        Certyfikat PRINCE II FOUNDATION metodologia zarządzania projektami.
-
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 text-justify">
-                    <p class="light-font mb-5">Ukończone kursy i szkolenia w zakresie zarządzania opieką zdrowotną,
-                        zarządzania nieruchomościami samorządu terytorialnego.<br><br>
-                        Uniwersytet Wrocławski – mgr informatyki. Skończona specjalność w zakresie informatyki to metody
-                        numeryczne.
-                        Zdolność realizowania zadań (samokontrola), umiejętność planowania i prowadzenia projektów oraz
-                        umiejętności systematycznie nabywane w zakresie zarządzania, umiejętność sporządzania analizy
-                        kosztowej danego przedsięwzięcia, umiejętność prowadzenia negocjacji, … .
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <!-- // end .section -->
 
 
-    <!-- FAQ -->
-    <div class="section pt-4 light-bg" id="cv">
-        <div class="container">
-            <div class="section-title">
-                <br>
-                <br>
-                <br>
-                <div class="accordion" id="accordionQuestions">
-                    <small>CV</small>
-                    <div class="card-header" id="headingOne" type="button" data-toggle="collapse"
-                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h3 class="mb-0">Doświadczenie</h3>
-                        <h3><i class="feather icon-chevron-down" style="font-size: 1.1em;"></i></h3>
-                    </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                        data-parent="#accordionQuestions">
-                        <div class="card-body">
-                            <table class="cv light-font">
-                                <tbody>
-                                    <tr style="height:74px">
-                                        <td style="height:74px;width:127px">2014-obecnie</td>
-                                        <td style="height:74px;width:544px"><strong>Właściciel</strong><br>Działalność
-                                            gospodarcza<br></td>
-                                    </tr>
-                                    <tr style="height:74px">
-                                        <td style="height:74px;width:127px">2016-obecnie</td>
-                                        <td style="height:74px;width:544px"><strong>Członek Rady Nadzorcej
-                                                Spółki.</strong> <br> Zakład Komunalny w Opolu sp. z&nbsp;o.o.</td>
-                                    </tr>
-                                    <tr style="height:74px">
-                                        <td style="height:74px;width:127px">2015-2016</td>
-                                        <td style="height:74px;width:544px"><strong>Zastępca przewodniczącego Rady
-                                                Nadzorcej Spółki.</strong> <br> Projekt Kępno sp. z&nbsp;o.o.</td>
-                                    </tr>
-                                    <tr style="height:68px">
-                                        <td style="height:68px;width:127px">2015</td>
-                                        <td style="height:68px;width:544px"><strong>Dyrektor ds. Automatyzacji Procesów
-                                                Ciepłowniczych</strong> <br> ENERGA&nbsp;Kogeneracja sp. z
-                                            o.o.<br>Koordynacja automatyzacji węzłów ciepłowniczych i modelowania sieci
-                                            w spółce Ciepło Kaliskie. Projekty na ok. 4,5 mln zł &nbsp;</td>
-                                    </tr>
-                                    <tr style="height:219px">
-                                        <td style="height:219px;width:127px">2002-2014</td>
-                                        <td style="height:219px;width:544px"><strong>Burmistrz Miasta Brzeg
-                                            </strong><br> Urząd Miasta Brzeg&nbsp;<br>(trzy kadencje) – jednoosobowe
-                                            zarządzanie corocznym budżetem ponad 100 mln. złotych, pozytywne oceny
-                                            działalności finansowej przez organy kontrolujące, wiele nagród z powodu
-                                            dobrego gospodarowania miastem począwszy od nagród za przestrzeń publiczną,
-                                            poprzez nagrody za sprawy społeczne do nagród za najlepsze wykorzystanie
-                                            „środków europejskich”, oddłużenie miasta, skuteczne zarządzanie w zakresie
-                                            kryzysowym (powodzie).<br>– Bezpośrednie zarządzanie około 150 osobami, a
-                                            poprzez jednostki organizacyjne, spółki, itp ponad 700 osobami.<br>–
-                                            Dziesiątki zrealizowanych projektów inwestycyjnych o wartości od kilkuset
-                                            tysięcy po kilkadziesiąt milionów złotych.<br>– Projekt Oczyszczanie ścieków
-                                            w Brzegu – projekt ponad 30 mln EURO<br>– Projekt System gospodarki odpadami
-                                            Ślęza – Oława projekt ponad 30 mln. EURO;<br>– Budowa Centrum
-                                            Sportowo-Rekreacyjnego w Brzegu – ponad 30 mln. zł.<br>– Termomodernizacja
-                                            budynków użyteczności publicznej – ok. 15 mln. zł.<br>– Wiele projektów
-                                            infrastrukturalnych do 5 mln. zł.&nbsp;<br></td>
-                                    </tr>
-                                    <tr style="height:74px">
-                                        <td style="height:74px;width:127px">2011-2015</td>
-                                        <td style="height:74px;width:544px"><strong>Przewodniczący Rady Nadzorcej
-                                                Spółki.</strong> <br> Zakład Gospodarki Odpadami w Gać sp. z&nbsp;o.o.
-                                        </td>
-                                    </tr>
-                                    <tr style="height:74px">
-                                        <td style="height:74px;width:127px">2011-2014</td>
-                                        <td style="height:74px;width:544px"><strong>Przewodniczący Rady Nadzorcej
-                                                Spółki.</strong> <br> U.W-K HYDROLEW Lewin Brzeski sp. z&nbsp;o.o.</td>
-                                    </tr>
-                                    <tr style="height:72px">
-                                        <td style="height:72px;width:127px">2007-2014</td>
-                                        <td style="height:72px;width:544px"><strong>Przewodniczący Zarządu
-                                                Związku</strong> <br> Ekologiczny Związek Gospodarki Odpadami
-                                            Komunalnymi Międzygminny „EKOGOK”<br>Realizacja wielu projektów dotyczących
-                                            przetwarzania odpadów, w tym projekt ponad 30 mln. EURO dotyczący „Systemu
-                                            gospodarki odpadami Ślęza – Oława”</td>
-                                    </tr>
-                                    <tr style="height:189px">
-                                        <td style="height:189px;width:127px">2002-2014<br></td>
-                                        <td style="height:189px;width:544px"><strong>Nadzór właścicielski
-                                                spółki</strong> <br> Brzeskie Przedsiębiorstwo Energetyki
-                                            Cieplnej&nbsp;sp. z o.o. <br> Brzeskie Towarzystwo Budownictwa Społecznego
-                                            sp. z o.o. <br> Miejski Zarząd Mienia Komunalnego w Brzegu&nbsp;sp. z o.o.
-                                            <br> Zakład Higieny Komunalnej&nbsp;w Brzegu&nbsp;sp. z o.o. <br>
-                                            Przedsiębiorstwo Wodociągów i Kanalizacji w Brzegu sp. z o.o.</td>
-                                    </tr>
-                                    <tr style="height:103px">
-                                        <td style="height:103px;width:127px">2004-2007</td>
-                                        <td style="height:103px;width:544px"><strong>Measure Authorizing
-                                                Officer</strong> <br> Fundusz Spójności „Oczyszczanie ścieków w
-                                            Brzegu”<br>projekt szacowany na ponad 30 mln Euro</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">2003-2008</td>
-                                        <td style="height:45px;width:544px"><strong>Członek Rady Programowej</strong>
-                                            <br> Radio Opole S.A.</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">2002-2007</td>
-                                        <td style="height:45px;width:544px"><strong>Przewodniczący Zgromadzenia</strong>
-                                            <br> Ekologiczny Związek Gospodarki Odpadami Komunalnymi Międzygminny
-                                            „EKOGOK”<br>Realizacja wielu projektów dotyczących przetwarzania odpadów, w
-                                            tym projekt ponad 30 mln. EURO dotyczący „Systemu gospodarki odpadami Ślęza
-                                            – Oława”</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">2000-2002</td>
-                                        <td style="height:45px;width:544px"><strong>Prezes Zarządu</strong> <br>
-                                            Silesian Consulting Group sp. z o.o. Brzeg</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">1999-2002</td>
-                                        <td style="height:45px;width:544px"><strong>Przewodniczący Rady Nadzorczej
-                                                Spółki</strong> <br> Uzdrowisko Połczyn S.A.</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">1999-2000</td>
-                                        <td style="height:45px;width:544px"><strong>Przewodnicący Rady Nadzorczej
-                                                Spółki</strong> <br> TBS Wrocław sp. z o.o.</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">1991-2002</td>
-                                        <td style="height:45px;width:544px"><strong>Właściciel</strong> <br> OP-KOM
-                                            Oprogramowanie Komputerów Brzeg<br>Doradztwo gospodarcze (tworzenie
-                                            strategii rozwoju firm i ich wdrażanie).<br>Projektowanie i wykonywanie
-                                            systemów informatycznych wspomagających zarządzanie.<br>– Zaprojektowanie i
-                                            zaprogramowanie systemu finansowo-księgowego oraz systemu środków trwałych
-                                            dla średnich i dużych firm.&nbsp;<br>– Stworzenie systemu “MDRS”Mission Data
-                                            Reception System wykorzystywanym przez firmę EUMETSAT-NIEMCY; przetwarzanie
-                                            obrazów, animacja i archiwizacja w bazie<br>– Stworzenie systemu “MDD/SADIS
-                                            System for PC/SAT” system dla Kuwejtu;czytanie danych satelitarnych,
-                                            przetwarzanie i tworzenie map pogodowych.<br>– Stworzenie systemu do
-                                            tłumaczenia &nbsp;i tworzenia wersji językowych dla CSB-SYSTEM
-                                            Deutschland.<br>– Wiele innych znaczących systemów.</td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">1987-1991</td>
-                                        <td style="height:45px;width:544px"><strong>Prace zdalne</strong> <br>System
-                                            modelowania oraz sterowania obrabiarkami numerycznymi dla firmy INTEGRA –
-                                            Japonia<br>Stworzenie systemu dla gospodarki czasem dla firmy SEV GmbH
-                                            Niemcy.&nbsp;<br>Dużo znaczących prac zleconych w tworzeniu systemów
-                                            użytkowych.<br></td>
-                                    </tr>
-                                    <tr style="height:45px">
-                                        <td style="height:45px;width:127px">1987-1989</td>
-                                        <td style="height:45px;width:544px"><strong>Projektant – Programista</strong>
-                                            <br> Softsat&nbsp;sp. z o.o. <br> AUTOKOMOP sp. z o.o.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+<nav class="svelte-oobjl5"><div class="nav svelte-oobjl5"><a class="logo svelte-oobjl5" href="/"><img src="./images/logo-wh.svg" alt="logo" class="svelte-oobjl5">
+			<p class="svelte-oobjl5">Huczyński</p></a>
+		<ul class="svelte-oobjl5"><li class="svelte-oobjl5"><a href="/#Curriculum-Vitae" class="svelte-oobjl5">CV</a></li>
+			<li class="svelte-oobjl5"><a href="/asystent/" class="svelte-oobjl5">Asystent</a></li>
+			<li class="svelte-oobjl5"><a href="/rodo/" class="svelte-oobjl5">RODO</a></li>
+			<li class="svelte-oobjl5"><a class="contact svelte-oobjl5" href="/#Kontakt">Kontakt</a></li></ul></div>
+</nav>
+<section class="svelte-14ne5kz"><header class="svelte-14ne5kz"><span slot="img"><img class="profile-picture svelte-1a1mlnz" src="./images/wh.jpg" alt="profile"></span>
+		<h1 class="svelte-14ne5kz"><span slot="title">Wojciech Huczyński</span></h1>
+		<p class="svelte-14ne5kz"><span slot="subtitle">Strona ma na celu przybliżenie dorobku oraz prezentację aktualnych projektów </span></p></header>
+	
+</section>
 
 
-            </div>
+<section id="O-mnie" style="background:false;" class="svelte-kjzv50"><div class="wrapper svelte-kjzv50">
+			<h2>O mnie</h2>
+		<div class="rows svelte-1a1mlnz"><p style="text-align:justify;" class="svelte-1a1mlnz">Zdany egzamin państwowy na członków Rad Nadzorczych Jednoosobowych Spółek Skarbu Państwa. (1998 r.)<br>
+			Dyplom Central Connecticut State University New Britain, i Politechniki Wrocławskiej z ukończenia podyplomowego Polsko-Amerykańskiego Studium Komunikacji Społecznej w Organizacji i Zarządzaniu.<br>
+			Certyfikat PRINCE II FOUNDATION metodologia zarządzania projektami.
+		</p>
+		<p style="text-align:justify;" class="svelte-1a1mlnz">Ukończone kursy i szkolenia w zakresie zarządzania opieką zdrowotną, zarządzania nieruchomościami samorządu terytorialnego.<br>
+			Uniwersytet Wrocławski – mgr informatyki. Skończona specjalność w zakresie informatyki to metody numeryczne. Zdolność realizowania zadań (samokontrola), umiejętność planowania i prowadzenia projektów oraz umiejętności systematycznie nabywane w zakresie zarządzania, umiejętność sporządzania analizy kosztowej danego przedsięwzięcia, umiejętność prowadzenia negocjacji, oraz wiele innych.
+		</p></div></div>
+</section>
+<section id="Curriculum-Vitae" style="background:false;" class="svelte-kjzv50"><div class="wrapper svelte-kjzv50"><hr class="svelte-kjzv50">
+			<h2>Curriculum Vitae</h2>
+		<input id="accordion" type="checkbox" class="svelte-1wveye5">
+<label for="accordion" class="svelte-1wveye5"><svg id="arrow" width="20" height="20" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" stroke="currentColor"><path d="M2 7  12 16 22 7"></path></svg></label>
+<div id="cv" class="svelte-1wveye5"><time>2014-obecnie</time>
+		<div><p class="title">Właściciel</p>
+			<p class="description">Działalność gospodarcza</p>
+		</div><time>2016-obecnie</time>
+		<div><p class="title">Członek Rady Nadzorcej Spółki.</p>
+			<p class="description">Zakład Komunalny w Opolu sp. z o.o.</p>
+		</div><time>2015-2016</time>
+		<div><p class="title">Zastępca przewodniczącego Rady Nadzorcej Spółki.</p>
+			<p class="description">Projekt Kępno sp. z o.o.</p>
+		</div><time>2015</time>
+		<div><p class="title">Dyrektor ds. Automatyzacji Procesów Ciepłowniczych</p>
+			<p class="description">ENERGA Kogeneracja sp. z o.o.
+Koordynacja automatyzacji węzłów ciepłowniczych i modelowania sieci w spółce Ciepło Kaliskie. Projekty na ok. 4,5 mln zł  </p>
+		</div><time>2002-2014</time>
+		<div><p class="title">Burmistrz Miasta Brzeg</p>
+			<p class="description">Urząd Miasta Brzeg 
+(trzy kadencje) – jednoosobowe zarządzanie corocznym budżetem ponad 100 mln. złotych, pozytywne oceny działalności finansowej przez organy kontrolujące, wiele nagród z powodu dobrego gospodarowania miastem począwszy od nagród za przestrzeń publiczną, poprzez nagrody za sprawy społeczne do nagród za najlepsze wykorzystanie „środków europejskich”, oddłużenie miasta, skuteczne zarządzanie w zakresie kryzysowym (powodzie).
+– Bezpośrednie zarządzanie około 150 osobami, a poprzez jednostki organizacyjne, spółki, itp ponad 700 osobami.
+– Dziesiątki zrealizowanych projektów inwestycyjnych o wartości od kilkuset tysięcy po kilkadziesiąt milionów złotych.
+– Projekt Oczyszczanie ścieków w Brzegu – projekt ponad 30 mln EURO
+– Projekt System gospodarki odpadami Ślęza – Oława projekt ponad 30 mln. EURO;
+– Budowa Centrum Sportowo-Rekreacyjnego w Brzegu – ponad 30 mln. zł.
+– Termomodernizacja budynków użyteczności publicznej – ok. 15 mln. zł.
+– Wiele projektów infrastrukturalnych do 5 mln. zł. </p>
+		</div><time>2011-2015</time>
+		<div><p class="title">Przewodniczący Rady Nadzorcej Spółki.</p>
+			<p class="description">Zakład Gospodarki Odpadami w Gać sp. z o.o.</p>
+		</div><time>2011-2014</time>
+		<div><p class="title">Przewodniczący Rady Nadzorcej Spółki.</p>
+			<p class="description">U.W-K HYDROLEW Lewin Brzeski sp. z o.o.</p>
+		</div><time>2007-2014</time>
+		<div><p class="title">Przewodniczący Zarządu Związku</p>
+			<p class="description">Ekologiczny Związek Gospodarki Odpadami Komunalnymi Międzygminny „EKOGOK”
+Realizacja wielu projektów dotyczących przetwarzania odpadów, w tym projekt ponad 30 mln. EURO dotyczący „Systemu gospodarki odpadami Ślęza – Oława”</p>
+		</div><time>2002-2014</time>
+		<div><p class="title">Nadzór właścicielski spółki</p>
+			<p class="description">Brzeskie Przedsiębiorstwo Energetyki Cieplnej sp. z o.o.
+Brzeskie Towarzystwo Budownictwa Społecznego sp. z o.o.
+Miejski Zarząd Mienia Komunalnego w Brzegu sp. z o.o.
+Zakład Higieny Komunalnej w Brzegu sp. z o.o.
+Przedsiębiorstwo Wodociągów i Kanalizacji w Brzegu sp. z o.o.</p>
+		</div><time>2004-2007</time>
+		<div><p class="title">Measure Authorizing Officer</p>
+			<p class="description">Fundusz Spójności „Oczyszczanie ścieków w Brzegu”
+projekt szacowany na ponad 30 mln Euro</p>
+		</div><time>2003-2008</time>
+		<div><p class="title">Członek Rady Programowej</p>
+			<p class="description">Radio Opole S.A.</p>
+		</div><time>2002-2007</time>
+		<div><p class="title">Przewodniczący Zgromadzenia</p>
+			<p class="description">Ekologiczny Związek Gospodarki Odpadami Komunalnymi Międzygminny „EKOGOK”
+Realizacja wielu projektów dotyczących przetwarzania odpadów, w tym projekt ponad 30 mln. EURO dotyczący „Systemu gospodarki odpadami Ślęza – Oława”</p>
+		</div><time>2000-2002</time>
+		<div><p class="title">Prezes Zarządu</p>
+			<p class="description">Silesian Consulting Group sp. z o.o. Brzeg</p>
+		</div><time>1999-2002</time>
+		<div><p class="title">Przewodniczący Rady Nadzorczej Spółki</p>
+			<p class="description">Uzdrowisko Połczyn S.A.</p>
+		</div><time>1999-2000</time>
+		<div><p class="title">Przewodnicący Rady Nadzorczej Spółki</p>
+			<p class="description">TBS Wrocław sp. z o.o.</p>
+		</div><time>1991-2002</time>
+		<div><p class="title">Właściciel</p>
+			<p class="description">OP-KOM Oprogramowanie Komputerów Brzeg
+Doradztwo gospodarcze (tworzenie strategii rozwoju firm i ich wdrażanie).
+Projektowanie i wykonywanie systemów informatycznych wspomagających zarządzanie.
+– Zaprojektowanie i zaprogramowanie systemu finansowo-księgowego oraz systemu środków trwałych dla średnich i dużych firm. 
+– Stworzenie systemu “MDRS”Mission Data Reception System wykorzystywanym przez firmę EUMETSAT-NIEMCY; przetwarzanie obrazów, animacja i archiwizacja w bazie
+– Stworzenie systemu “MDD/SADIS System for PC/SAT” system dla Kuwejtu;czytanie danych satelitarnych, przetwarzanie i tworzenie map pogodowych.
+– Stworzenie systemu do tłumaczenia  i tworzenia wersji językowych dla CSB-SYSTEM Deutschland.
+– Wiele innych znaczących systemów.</p>
+		</div><time>1987-1991</time>
+		<div><p class="title">Prace zdalne</p>
+			<p class="description">System modelowania oraz sterowania obrabiarkami numerycznymi dla firmy INTEGRA – Japonia
+Stworzenie systemu dla gospodarki czasem dla firmy SEV GmbH Niemcy. 
+Dużo znaczących prac zleconych w tworzeniu systemów użytkowych.</p>
+		</div><time>1987-1989</time>
+		<div><p class="title">Projektant – Programista</p>
+			<p class="description">Softsat sp. z o.o.
+AUTOKOMOP sp. z o.o.</p>
+		</div>
+</div></div>
+</section>
+<section id="Kontakt" style="background:var(--gradient);" class="svelte-kjzv50"><div class="wrapper svelte-kjzv50">
+			<h2 class="background">Kontakt</h2>
+		<div class="map-grid svelte-1a1mlnz"><div class="contact-info svelte-1a1mlnz">
+			<svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M5.451 10.29 8.16 7.845c-.462-1.053-.738-2.29-.643-3.9l-3.54-.02c.722 11.37 7.812 15.305 16.019 16.15l.03-3.65c-1.723-.009-2.87-.305-3.966-.627l-2.288 2.691"></path></svg>
+			<a href="tel:+48604907222">+48 604 907 222</a>
+			<svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m2.74 4.826 9.388 7.53 9.131-7.53m-18.518 0h18.518v14.348H2.741Z"></path></svg>
+			<a href="mailto:kontakt@huczynski.pl">kontakt@huczynski.pl</a>
+			<svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M19.211 10.382c0 5.094-7.4 10.448-7.4 10.448s-7.022-5.158-7.022-10.448a7.211 7.211 0 1 1 14.422 0z"></path><circle cx="11.745" cy="10.509" r="1.723"></circle></svg>
+			<a href="https://goo.gl/maps/CxLpJpsxGxfNQfKD8" target="_blank" rel="noopener noreferrer">Poprzeczna 15, <br>49-305 Brzeg</a></div>
+		<div id="map" class="svelte-1ehnppg"></div></div></div>
+</section>
 
-        </div>
-
-    </div>
-    <!-- // end .section -->
 
 
-    <!-- CONTACT -->
-    <div class="section pt-4 bg-gradient" id="contact">
-        <div class="container">
-            <div class="kontakt">
-                <div class="text-center">
-                    <i class="feather icon-smartphone"></i><br>
-                    <!-- <small class="tagline">W razie pytań</small> -->
-                    <h2>Kontakt</h2>
-                </div>
-                <div class="kontakt-dane">
-                    <p class="mb-2 white"><i class="feather icon-phone"></i>+48 604 907 222 <a
-                            href="tel:+48604907222"></a></p>
-                    <p class="mb-2 white"><i class="feather icon-mail"></i><a class="mr-4"
-                            href="mailto:kontakt@huczynski.pl">kontakt@huczynski.pl</a></p>
-                    <p class="mb-2 white"><i class="feather icon-map-pin"></i>Poprzeczna 15, 49-305 Brzeg</p>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MAP -->
-    <div class="section" style='padding:0;'>
-        <div id="map"></div>
-    </div>
-    <!-- // end .section -->
 
 
-    <footer class="my-5 text-center light-bg">
-        <!-- Copyright removal is not prohibited! -->
-        <p class="mb-2"><small>
-                COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a
-                    href="https://colorlib.com">COLORLIB</a><br>
-                Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> and <a
-                    href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
-                    title="Flaticon">www.flaticon.com</a> is licensed by <a
-                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                    target="_blank">CC 3.0 BY</a>
-            </small></p>
-        <!-- <small>
-            <a href="#oferta" class="m-2">OFERTA</a>
-            <a href="#zespol" class="m-2">ZESPÓŁ</a>
-        </small> -->
-    </footer>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <!-- leaflet -->
-    <script src="js/leaflet-map.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+			
+		
 </body>
-
 </html>

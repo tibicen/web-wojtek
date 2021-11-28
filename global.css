@@ -1,0 +1,137 @@
+:root {
+    --text: #999;
+    --text-darker: #666;
+    --white-dimmed: #fff7;
+    --gradient: linear-gradient(135deg, hsl(200, 60%, 50%), hsl(230, 60%, 40%) 100%);
+    --color: hsl(215, 60%, 45%);
+    --shadow: 16.82px 16.82px 30px hsla(0, 0%, 4%, 0.3), -16.82px -16.82px 30px hsl(210, 100%, 70%);
+    --border: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fa;
+}
+
+svg {
+    fill: none;
+    stroke: var(--color);
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+a {
+    transition: all 1s ease;
+
+}
+
+a:hover {
+    filter: brightness(1.05);
+    
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 2rem;
+    color: var(--color);
+}
+
+p, ul {
+    color: var(--text);
+    margin: 0;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+strong {
+    color: var(--color);
+    filter:opacity(.8);
+    font-weight: 400;
+}
+
+.rows {
+    display: flex;
+    gap: 1rem 2rem;
+    text-align: justify;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.rows p {
+    line-height: 1.6rem;
+    width: 20rem;
+    flex-grow: 1;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#cv {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 0;
+    padding: 0;
+    max-height: 0vh;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+time {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 0.2rem;
+    color: var(--text);
+}
+
+.title, .description {
+    text-align: justify;
+    margin-left: 10px;
+}
+
+time, .description {
+    font-size: small;
+}
+
+.description {
+    white-space: pre-line;
+}
+
+.title {
+    color: var(--text-darker);
+}
+
+#arrow {
+    stroke: var(--text);
+}
+
+#cv div {
+    border-left: var(--border);
+    padding-bottom: 1em;
+}
+
+#arrow:hover {
+    stroke: var(--color);
+    transition: all .5s ease;
+}
+
+.background {
+    color: white;
+}
+
+
