@@ -1,0 +1,9 @@
+import{B as e,R as t,T as n,U as r,V as i,n as a,x as o,y as s}from"../chunks/JrOqrTN6.js";import"../chunks/C9HIHum0.js";import{t as c}from"../chunks/CFhYQ8t8.js";import{n as l}from"../chunks/BtGDEN2E.js";var u=o(`<h1>Aktualne projekty</h1> <p>Firma Wojciech Huczyński łączy doświadczenie w tworzeniu oprogramowania z praktyką pracy w
+		administracji samorządowej. Obecnie rozwijamy dwa programy: system MADO do dokumentacji RODO i
+		KRI oraz Wirtualnego Asystenta, który automatyzuje wprowadzanie danych.</p> <h2 id="mado">MADO</h2> <p>Webowy system, który prowadzi całą dokumentację ochrony danych osobowych (RODO) i bezpieczeństwa
+		informacji (KRI, SZBI) w jednym miejscu: rejestr czynności przetwarzania, upoważnienia,
+		naruszenia, incydenty, analizę ryzyka i audyty. Dla administratorów danych, inspektorów ochrony
+		danych i firm obsługujących wiele jednostek.</p> <p class="actions"><a class="button" href="/mymado/">MADO – system do dokumentacji RODO i KRI</a></p> <h2 id="asystent">Wirtualny Asystent</h2> <p>Uczący się program dla Windows, który wprowadza dane do dowolnych pól w aplikacji użytkownika,
+		także tam, gdzie nie ma API. Działa według wyuczonego wzorca postępowania, kilkadziesiąt razy
+		szybciej niż człowiek i bez wprowadzania nowych błędów. Sprawdza się przy migracji danych do
+		nowych systemów i przy masowych poprawkach w bazach.</p> <p class="actions"><a class="button" href="/asystent/">Wirtualny Asystent – automatyzacja wprowadzania danych</a></p> <h2 id="wspolpraca">Współpraca</h2> <p>Chcesz porozmawiać o jednym z projektów? Napisz lub zadzwoń.</p> <p class="actions"><a class="button primary" href="/#Kontakt">Kontakt</a></p>`,1);function d(o,d){i(d,!1),a();{let e=t(()=>l(`projekty`));c(o,{get meta(){return n(e)},children:(e,t)=>{var n=u();r(20),s(e,n)},$$slots:{default:!0}})}e()}export{d as component};

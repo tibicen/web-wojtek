@@ -1,227 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
-
-<head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
-	<!-- Statistics -->
-	<script async defer data-website-id="b89ad136-ef50-4160-b65a-ae0bb0ccad01"
-		src="https://stats.huczynski.pl/umami.js"></script>
-	<script defer data-domain="wojciech.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
-
-
-	<!-- Primary Meta Tags -->
-	<title>Wojciech Huczyński – Architekt oprogramowania oraz przedsiębiorca</title>
-	<meta name="title" content="Wojciech Huczyński – Architekt oprogramowania oraz przedsiębiorca">
-	<meta name="description"
-		content="Architekt oprogramowania, doświadczony manager, przedsiębiorca. Wieloletni niezależny burmistrz miasta Brzeg.">
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://wojciech.huczynski.pl/">
-	<meta property="og:title" content="Wojciech Huczyński – Architekt oprogramowania oraz przedsiębiorca">
-	<meta property="og:description"
-		content="Architekt oprogramowania, doświadczony manager, przedsiębiorca. Wieloletni niezależny burmistrz miasta Brzeg.">
-	<meta property="og:image" content="https://wojciech.huczynski.pl/images/wh-social.jpg">
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://wojciech.huczynski.pl/">
-	<meta property="twitter:title" content="Wojciech Huczyński – Architekt oprogramowania oraz przedsiębiorca">
-	<meta property="twitter:description"
-		content="Architekt oprogramowania, doświadczony manager, przedsiębiorca. Wieloletni niezależny burmistrz miasta Brzeg.">
-	<meta property="twitter:image" content="https://wojciech.huczynski.pl/images/wh-social.jpg">
-
-	<!-- Optional Additions for Consideration -->
-	<meta property="og:site_name"
-		content="Wojciech Huczyński – Architekt oprogramowania, doświadczony manager, przedsiębiorca.">
-
-	<!-- <link rel="icon" href="/images/favicon.ico" sizes="any"> -->
-	<link rel="icon" href="/images/logo-wh.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
-	<link rel="manifest" href="/icons/manifest.webmanifest">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-	<meta name="theme-color" content="#3177c4" />
-	<link rel="stylesheet" type="text/css" href="/global.min.css" media="screen">
-	<!-- HEAD_svelte-16duai8_START --><link rel="stylesheet" href="leaflet.min.css"><!-- HEAD_svelte-16duai8_END -->
-
-		
-
-		<link rel="modulepreload" href="/app_/start-6d818973.js">
-		<link rel="modulepreload" href="/app_/chunks/index-dc356f4d.js">
-		<link rel="modulepreload" href="/app_/chunks/preload-helper-1761e96c.js">
-		<link rel="modulepreload" href="/app_/chunks/index-d24834e6.js">
-		<link rel="modulepreload" href="/app_/layout.svelte-d820a67c.js">
-		<link rel="modulepreload" href="/app_/pages/index.svelte-01827865.js">
-		<link rel="modulepreload" href="/app_/chunks/NavWH-c1683374.js">
-		<link rel="modulepreload" href="/app_/chunks/Section-d36d4aa7.js">
-		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/app_/assets/pages/index.svelte-e2654623.css">
-		<link rel="stylesheet" href="/app_/assets/Section-d514f942.css">
-
-		<script type="module">
-			import { start } from "/app_/start-6d818973.js";
-			start({
-				target: document.querySelector("body"),
-				paths: {"base":"","assets":""},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/app_/layout.svelte-d820a67c.js"),
-						import("/app_/pages/index.svelte-01827865.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "\u002F",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
-			});
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#FFFCF0" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#100F0F" media="(prefers-color-scheme: dark)" />
+		<link rel="icon" href="./images/logo-wh.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+		<link rel="manifest" href="./icons/manifest.webmanifest" />
+		<link
+			rel="preload"
+			href="./fonts/Libron-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<script>
+			// Apply the saved theme before first paint, so the page never flashes the wrong one.
+			try {
+				if (localStorage.theme) document.documentElement.dataset.theme = localStorage.theme;
+			} catch {}
 		</script>
-</head>
-
-<body>
-
-
-
-
-<nav class="svelte-vxysjl"><div class="nav svelte-vxysjl"><a class="logo svelte-vxysjl" href="/"><img src="/images/logo-wh.svg" alt="logo" class="svelte-vxysjl">
-			<p class="svelte-vxysjl">Huczyński</p></a>
-		<ul class="svelte-vxysjl"><li><a href="/#CV">CV</a></li>
-	<li><a href="/asystent">Asystent</a></li>
-	<li><a href="/rodo">RODO</a></li>
-	<li><a class="contact" href="/#Kontakt">Kontakt</a></li></ul></div>
-</nav>
-<section class="svelte-1rx3xnq"><header class="svelte-1rx3xnq"><span slot="img"><img class="profile-picture svelte-j6elqj" src="./images/wh.jpg" alt="profile"></span>
-		<h1 class="svelte-1rx3xnq"><span slot="title">Wojciech Huczyński</span></h1>
-		<p class="svelte-1rx3xnq"><span slot="subtitle">Strona ma na celu przybliżenie dorobku oraz prezentację aktualnych projektów </span></p></header>
-	
-</section>
-
-
-<section id="O-mnie" style="background:false;" class="svelte-kjzv50"><div class="wrapper svelte-kjzv50">
-			<h2>O mnie</h2>
-		<div class="rows svelte-j6elqj"><p style="text-align:justify;" class="svelte-j6elqj">Zdany egzamin państwowy na członków Rad Nadzorczych Jednoosobowych Spółek Skarbu Państwa. (1998 r.)<br>
-			Dyplom Central Connecticut State University New Britain, i Politechniki Wrocławskiej z ukończenia podyplomowego Polsko-Amerykańskiego Studium Komunikacji Społecznej w Organizacji i Zarządzaniu.<br>
-			Certyfikat PRINCE II FOUNDATION metodologia zarządzania projektami.
-		</p>
-		<p style="text-align:justify;" class="svelte-j6elqj">Ukończone kursy i szkolenia w zakresie zarządzania opieką zdrowotną, zarządzania nieruchomościami samorządu terytorialnego.<br>
-			Uniwersytet Wrocławski – mgr informatyki. Skończona specjalność w zakresie informatyki to metody numeryczne. Zdolność realizowania zadań (samokontrola), umiejętność planowania i prowadzenia projektów oraz umiejętności systematycznie nabywane w zakresie zarządzania, umiejętność sporządzania analizy kosztowej danego przedsięwzięcia, umiejętność prowadzenia negocjacji, oraz wiele innych.
-		</p></div></div>
-</section>
-<section id="CV" style="background:false;" class="svelte-kjzv50"><div class="wrapper svelte-kjzv50"><hr class="svelte-kjzv50">
-			<h2>Curriculum Vitae</h2>
-		<input id="accordion" type="checkbox" class="svelte-1w5uapt">
-<label for="accordion" class="svelte-1w5uapt"><svg id="arrow" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" stroke="currentColor" class="svelte-1w5uapt"><path d="M2 7  12 16 22 7"></path></svg></label>
-<div id="cv" class="svelte-1w5uapt"><time>2014-obecnie</time>
-		<div class="svelte-1w5uapt"><p class="title">Właściciel</p>
-			<p class="description">Działalność gospodarcza</p>
-		</div><time>2016-obecnie</time>
-		<div class="svelte-1w5uapt"><p class="title">Członek Rady Nadzorcej Spółki.</p>
-			<p class="description">Zakład Komunalny w Opolu sp. z o.o.</p>
-		</div><time>2015-2016</time>
-		<div class="svelte-1w5uapt"><p class="title">Zastępca przewodniczącego Rady Nadzorcej Spółki.</p>
-			<p class="description">Projekt Kępno sp. z o.o.</p>
-		</div><time>2015</time>
-		<div class="svelte-1w5uapt"><p class="title">Dyrektor ds. Automatyzacji Procesów Ciepłowniczych</p>
-			<p class="description">ENERGA Kogeneracja sp. z o.o.
-Koordynacja automatyzacji węzłów ciepłowniczych i modelowania sieci w spółce Ciepło Kaliskie. Projekty na ok. 4,5 mln zł  </p>
-		</div><time>2002-2014</time>
-		<div class="svelte-1w5uapt"><p class="title">Burmistrz Miasta Brzeg</p>
-			<p class="description">Urząd Miasta Brzeg 
-(trzy kadencje) – jednoosobowe zarządzanie corocznym budżetem ponad 100 mln. złotych, pozytywne oceny działalności finansowej przez organy kontrolujące, wiele nagród z powodu dobrego gospodarowania miastem począwszy od nagród za przestrzeń publiczną, poprzez nagrody za sprawy społeczne do nagród za najlepsze wykorzystanie „środków europejskich”, oddłużenie miasta, skuteczne zarządzanie w zakresie kryzysowym (powodzie).
-– Bezpośrednie zarządzanie około 150 osobami, a poprzez jednostki organizacyjne, spółki, itp ponad 700 osobami.
-– Dziesiątki zrealizowanych projektów inwestycyjnych o wartości od kilkuset tysięcy po kilkadziesiąt milionów złotych.
-– Projekt Oczyszczanie ścieków w Brzegu – projekt ponad 30 mln EURO
-– Projekt System gospodarki odpadami Ślęza – Oława projekt ponad 30 mln. EURO;
-– Budowa Centrum Sportowo-Rekreacyjnego w Brzegu – ponad 30 mln. zł.
-– Termomodernizacja budynków użyteczności publicznej – ok. 15 mln. zł.
-– Wiele projektów infrastrukturalnych do 5 mln. zł. </p>
-		</div><time>2011-2015</time>
-		<div class="svelte-1w5uapt"><p class="title">Przewodniczący Rady Nadzorcej Spółki.</p>
-			<p class="description">Zakład Gospodarki Odpadami w Gać sp. z o.o.</p>
-		</div><time>2011-2014</time>
-		<div class="svelte-1w5uapt"><p class="title">Przewodniczący Rady Nadzorcej Spółki.</p>
-			<p class="description">U.W-K HYDROLEW Lewin Brzeski sp. z o.o.</p>
-		</div><time>2007-2014</time>
-		<div class="svelte-1w5uapt"><p class="title">Przewodniczący Zarządu Związku</p>
-			<p class="description">Ekologiczny Związek Gospodarki Odpadami Komunalnymi Międzygminny „EKOGOK”
-Realizacja wielu projektów dotyczących przetwarzania odpadów, w tym projekt ponad 30 mln. EURO dotyczący „Systemu gospodarki odpadami Ślęza – Oława”</p>
-		</div><time>2002-2014</time>
-		<div class="svelte-1w5uapt"><p class="title">Nadzór właścicielski spółki</p>
-			<p class="description">Brzeskie Przedsiębiorstwo Energetyki Cieplnej sp. z o.o.
-Brzeskie Towarzystwo Budownictwa Społecznego sp. z o.o.
-Miejski Zarząd Mienia Komunalnego w Brzegu sp. z o.o.
-Zakład Higieny Komunalnej w Brzegu sp. z o.o.
-Przedsiębiorstwo Wodociągów i Kanalizacji w Brzegu sp. z o.o.</p>
-		</div><time>2004-2007</time>
-		<div class="svelte-1w5uapt"><p class="title">Measure Authorizing Officer</p>
-			<p class="description">Fundusz Spójności „Oczyszczanie ścieków w Brzegu”
-projekt szacowany na ponad 30 mln Euro</p>
-		</div><time>2003-2008</time>
-		<div class="svelte-1w5uapt"><p class="title">Członek Rady Programowej</p>
-			<p class="description">Radio Opole S.A.</p>
-		</div><time>2002-2007</time>
-		<div class="svelte-1w5uapt"><p class="title">Przewodniczący Zgromadzenia</p>
-			<p class="description">Ekologiczny Związek Gospodarki Odpadami Komunalnymi Międzygminny „EKOGOK”
-Realizacja wielu projektów dotyczących przetwarzania odpadów, w tym projekt ponad 30 mln. EURO dotyczący „Systemu gospodarki odpadami Ślęza – Oława”</p>
-		</div><time>2000-2002</time>
-		<div class="svelte-1w5uapt"><p class="title">Prezes Zarządu</p>
-			<p class="description">Silesian Consulting Group sp. z o.o. Brzeg</p>
-		</div><time>1999-2002</time>
-		<div class="svelte-1w5uapt"><p class="title">Przewodniczący Rady Nadzorczej Spółki</p>
-			<p class="description">Uzdrowisko Połczyn S.A.</p>
-		</div><time>1999-2000</time>
-		<div class="svelte-1w5uapt"><p class="title">Przewodnicący Rady Nadzorczej Spółki</p>
-			<p class="description">TBS Wrocław sp. z o.o.</p>
-		</div><time>1991-2002</time>
-		<div class="svelte-1w5uapt"><p class="title">Właściciel</p>
-			<p class="description">OP-KOM Oprogramowanie Komputerów Brzeg
-Doradztwo gospodarcze (tworzenie strategii rozwoju firm i ich wdrażanie).
-Projektowanie i wykonywanie systemów informatycznych wspomagających zarządzanie.
-– Zaprojektowanie i zaprogramowanie systemu finansowo-księgowego oraz systemu środków trwałych dla średnich i dużych firm. 
-– Stworzenie systemu “MDRS”Mission Data Reception System wykorzystywanym przez firmę EUMETSAT-NIEMCY; przetwarzanie obrazów, animacja i archiwizacja w bazie
-– Stworzenie systemu “MDD/SADIS System for PC/SAT” system dla Kuwejtu;czytanie danych satelitarnych, przetwarzanie i tworzenie map pogodowych.
-– Stworzenie systemu do tłumaczenia  i tworzenia wersji językowych dla CSB-SYSTEM Deutschland.
-– Wiele innych znaczących systemów.</p>
-		</div><time>1987-1991</time>
-		<div class="svelte-1w5uapt"><p class="title">Prace zdalne</p>
-			<p class="description">System modelowania oraz sterowania obrabiarkami numerycznymi dla firmy INTEGRA – Japonia
-Stworzenie systemu dla gospodarki czasem dla firmy SEV GmbH Niemcy. 
-Dużo znaczących prac zleconych w tworzeniu systemów użytkowych.</p>
-		</div><time>1987-1989</time>
-		<div class="svelte-1w5uapt"><p class="title">Projektant – Programista</p>
-			<p class="description">Softsat sp. z o.o.
-AUTOKOMOP sp. z o.o.</p>
-		</div>
-</div></div>
-</section>
-<section id="Kontakt" style="background:var(--gradient);" class="svelte-kjzv50"><div class="wrapper svelte-kjzv50">
-			<h2 class="background">Kontakt</h2>
-		<div class="map-grid svelte-j6elqj"><div class="contact-info svelte-j6elqj">
-			<svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M5.451 10.29 8.16 7.845c-.462-1.053-.738-2.29-.643-3.9l-3.54-.02c.722 11.37 7.812 15.305 16.019 16.15l.03-3.65c-1.723-.009-2.87-.305-3.966-.627l-2.288 2.691"></path></svg>
-			<a href="tel:+48604907222">+48 604 907 222</a>
-			<svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m2.74 4.826 9.388 7.53 9.131-7.53m-18.518 0h18.518v14.348H2.741Z"></path></svg>
-			<a href="mailto:kontakt@huczynski.pl">kontakt@huczynski.pl</a>
-			<svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M19.211 10.382c0 5.094-7.4 10.448-7.4 10.448s-7.022-5.158-7.022-10.448a7.211 7.211 0 1 1 14.422 0z"></path><circle cx="11.745" cy="10.509" r="1.723"></circle></svg>
-			<a href="https://goo.gl/maps/CxLpJpsxGxfNQfKD8" target="_blank" rel="noopener noreferrer">Poprzeczna 15, <br>49-305 Brzeg</a></div>
-		
-<div id="map" class="svelte-5ic2u2"></div></div></div>
-</section>
-
-
-
+		<link href="./_app/immutable/entry/start.BMT2bOxK.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DclECHGd.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/5N0vmxuj.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bvvs5b8l.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/JrOqrTN6.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DhglI6Fd.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.d_FSv9OT.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.C-K2UgWf.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/WFDgsfc6.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C9HIHum0.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BtGDEN2E.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C0Y2KKec.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.BNYXRUcH.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CFhYQ8t8.js" rel="modulepreload">
+		<!--12qhfyh--><!--[0--><meta name="description" content="Architekt oprogramowania, manager i przedsiębiorca z Brzegu, burmistrz miasta w latach 2002–2014. Doświadczenie, aktualne projekty i kontakt."/> <link rel="canonical" href="https://wojciech.huczynski.pl/"/> <meta property="og:type" content="profile"/> <meta property="og:locale" content="pl_PL"/> <meta property="og:site_name" content="Wojciech Huczyński"/> <meta property="og:url" content="https://wojciech.huczynski.pl/"/> <meta property="og:title" content="Wojciech Huczyński – architekt oprogramowania, Brzeg"/> <meta property="og:description" content="Architekt oprogramowania, manager i przedsiębiorca z Brzegu, burmistrz miasta w latach 2002–2014. Doświadczenie, aktualne projekty i kontakt."/> <meta property="og:image" content="https://wojciech.huczynski.pl/images/wh-social.jpg"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta property="og:image:alt" content="Wojciech Huczyński"/> <meta name="twitter:card" content="summary_large_image"/> <!----><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://wojciech.huczynski.pl/#website","url":"https://wojciech.huczynski.pl/","name":"Wojciech Huczyński","inLanguage":"pl-PL","publisher":{"@id":"https://wojciech.huczynski.pl/#person"}},{"@type":"Person","@id":"https://wojciech.huczynski.pl/#person","name":"Wojciech Huczyński","jobTitle":"Architekt oprogramowania","description":"Architekt oprogramowania, doświadczony manager, przedsiębiorca. Wieloletni niezależny burmistrz miasta Brzeg.","url":"https://wojciech.huczynski.pl/","image":"https://wojciech.huczynski.pl/images/wh.jpg","email":"kontakt@huczynski.pl","telephone":"+48604907222","address":{"@type":"PostalAddress","streetAddress":"ul. Poprzeczna 15","postalCode":"49-305","addressLocality":"Brzeg","addressCountry":"PL"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Uniwersytet Wrocławski"},{"@type":"CollegeOrUniversity","name":"Politechnika Wrocławska"},{"@type":"CollegeOrUniversity","name":"Central Connecticut State University"}]}]}</script><!----><!--]--><!----><title>Wojciech Huczyński – architekt oprogramowania, Brzeg</title>
+		<link href="./_app/immutable/assets/Contact.DZfd4DNX.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.DMY7woaF.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.CmjdWfK2.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!--[0--><!--[--><a class="skip" href="#main">Przejdź do treści</a> <header class="mobile-head svelte-12qhfyh"><a class="brand svelte-12qhfyh" href="/" aria-label="Wojciech Huczyński"><img src="/images/logo-wh.svg" alt="" width="24" height="24"/></a> <!--[0--><span class="here svelte-12qhfyh">Wojciech Huczyński</span><!--]--> <button class="to-toc svelte-12qhfyh" popovertarget="sidebar" aria-label="Spis treści" title="Spis treści"><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><g fill="currentColor"><circle cx="4" cy="5" r="1.3"></circle><circle cx="4" cy="10" r="1.3"></circle><circle cx="4" cy="15" r="1.3"></circle></g><path d="M8 5h9M8 10h9M8 15h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></header> <div class="page"><main id="main"><!--[--><!--[-1--><!--[--><article class="chapter front" style="counter-reset: chapter 0 section;"><!--[-1--><!--]--> <header class="hero svelte-1uha8ag"><img class="portrait" src="/images/wh.jpg" alt="Wojciech Huczyński – zdjęcie portretowe" width="400" height="400" fetchpriority="high"/> <h1 class="svelte-1uha8ag">Wojciech Huczyński</h1> <p class="tagline svelte-1uha8ag">Architekt oprogramowania, manager, przedsiębiorca</p> <p class="svelte-1uha8ag">Architekt oprogramowania, doświadczony manager, przedsiębiorca. Wieloletni niezależny
+			burmistrz miasta Brzeg. Strona ma na celu przybliżenie dorobku oraz prezentację aktualnych
+			projektów.</p></header> <h2 id="O-mnie">O mnie</h2> <p>Mgr informatyki Uniwersytetu Wrocławskiego, twórca systemów informatycznych wspomagających
+		zarządzanie, przez trzy kadencje burmistrz Brzegu, członek rad nadzorczych spółek.</p> <p class="actions"><a class="button" href="/o-mnie/">Wykształcenie i doświadczenie</a></p> <h2 id="Projekty">Usługi i projekty</h2> <p><a href="/rodo/">Wdrażanie RODO i funkcja Inspektora Ochrony Danych</a> oraz <a href="/szbi/">System Zarządzania Bezpieczeństwem Informacji (SZBI) zgodny z KRI</a> dla
+		samorządów, jednostek organizacyjnych i firm. Własne oprogramowanie: <a href="/mymado/">MADO – system do dokumentacji RODO i KRI</a> oraz <a href="/asystent/">Wirtualny Asystent – automatyzacja wprowadzania danych</a> w aplikacjach, które
+		nie mają API.</p> <p class="actions"><a class="button" href="/projekty/">Aktualne projekty</a></p> <h2 id="Kontakt">Kontakt</h2> <address class="svelte-1y6h5pf"><dl class="svelte-1y6h5pf"><dt class="svelte-1y6h5pf">Telefon</dt> <dd class="num svelte-1y6h5pf"><a href="tel:+48604907222">+48 604 907 222</a></dd> <dt class="svelte-1y6h5pf">E-mail</dt> <dd class="svelte-1y6h5pf"><a href="mailto:kontakt@huczynski.pl">kontakt@huczynski.pl</a></dd> <dt class="svelte-1y6h5pf">Adres</dt> <dd class="num svelte-1y6h5pf"><a href="https://goo.gl/maps/CxLpJpsxGxfNQfKD8" rel="noopener">ul. Poprzeczna 15, 49-305 Brzeg</a></dd></dl></address><!----> <div class="map svelte-1g1nr2a"></div><!----><!----></article><!--]--><!--]--><!--]--><!----></main> <aside class="sidebar svelte-1nhzsi7" id="sidebar" popover=""><a class="brand svelte-1nhzsi7" href="/"><img src="/images/logo-wh.svg" alt="" width="40" height="40" class="svelte-1nhzsi7"/> <span>Wojciech<br/>Huczyński</span></a> <nav class="toc" id="toc" aria-labelledby="toc-title"><p id="toc-title" class="svelte-1nhzsi7">Spis treści</p> <ol class="svelte-1nhzsi7"><!--[--><li class="svelte-1nhzsi7"><a href="/o-mnie/" class="svelte-1nhzsi7"><span class="no svelte-1nhzsi7">1.</span>O mnie</a> <!--[-1--><!--]--></li><li class="svelte-1nhzsi7"><a href="/rodo/" class="svelte-1nhzsi7"><span class="no svelte-1nhzsi7">2.</span>Usługi RODO</a> <!--[-1--><!--]--></li><li class="svelte-1nhzsi7"><a href="/szbi/" class="svelte-1nhzsi7"><span class="no svelte-1nhzsi7">3.</span>Usługi SZBI</a> <!--[-1--><!--]--></li><li class="svelte-1nhzsi7"><a href="/projekty/" class="svelte-1nhzsi7"><span class="no svelte-1nhzsi7">4.</span>Projekty</a> <!--[-1--><!--]--></li><!--]--></ol></nav> <div class="tools svelte-1nhzsi7"><button class="round svelte-i313aa" type="button" aria-label="Przełącz motyw jasny/ciemny" title="Przełącz motyw jasny/ciemny"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2"></circle><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"></path></svg></button><!----></div></aside><!----></div> <footer class="svelte-d1x29l"><p class="fleuron svelte-d1x29l" aria-hidden="true">¶</p> <!--[-1--><!--]--> <p class="colophon svelte-d1x29l">© 2026 Wojciech Huczyński</p></footer><!----><!--]--><!--]--><!--]--><!----> <!--[-1--><!--]--><!--]-->
 			
-		
-</body>
+			<script>
+				{
+					__sveltekit_xcx1x1 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						version: "1795477447696"
+					};
 
+					const element = document.currentScript.parentElement;
+
+					import("./_app/immutable/entry/start.BMT2bOxK.js").then(async (kit) => {
+						kit.init(__sveltekit_xcx1x1);
+						const app = await import("./_app/immutable/entry/app.d_FSv9OT.js");
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
